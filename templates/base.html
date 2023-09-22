@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        {% block title %} Интернет-магазин{% endblock %}
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="/main/">Главная</a>
+            <a href="/clothes/">Одежда</a>
+            <a href="/shoes/">Обувь</a>
+            <a href="/coats/">Верхняя одежда</a>
+
+        </nav>
+
+        {% block content %}Страница не заполнена{% endblock %}
+    </div>
+
+    <footer>
+        <p align="center">Все права защищены</p>
+    </footer>
+</body>
+
+</html>
